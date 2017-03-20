@@ -1,21 +1,15 @@
+/* Created by Chase Watson */
 package com.chase.statsapp;
 
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.Button;
 import android.widget.TextView;
+import android.content.Intent;
 
-import org.w3c.dom.Text;
-
-public class MainActivity extends AppCompatActivity {
-
-    public void saveStats(View view) {
-
-    }
-
+public class MainActivity extends FragmentActivity {
+    Intent intent;
     int savesNum = 1;
     int goalsNum = 0;
     int shotsNum = 1;
@@ -23,11 +17,25 @@ public class MainActivity extends AppCompatActivity {
     Button savesPlusClickHere;
     Button goalsMinusClickHere;
     Button goalsPlusClickHere;
+    Button saveStatsButtonClickHere;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /* SAVE STATS BUTTON */
+        saveStatsButtonClickHere = (Button) findViewById(R.id.saveStatsButton);
+        saveStatsButtonClickHere.setOnClickListener(new View.OnClickListener() {
+            public void onClick (View g) {
+                String button_text;
+                button_text = ((Button) g).getText().toString();
+                if (button_text.equals("Save Stats")) {
+                    intent = (new Intent(MainActivity.this, UsersActivity.class));
+                    startActivity(intent);
+                }
+            }
+        });
 
          /* MINUS BUTTON FOR SAVES */
         savesMinusClickHere = (Button) findViewById(R.id.saveMinusButton);
@@ -37,7 +45,10 @@ public class MainActivity extends AppCompatActivity {
                 TextView totalShotsTextField = (TextView) findViewById(R.id.totalShotsTextField);
                 TextView savePercentageTextField = (TextView) findViewById(R.id.savePercentageTextField);
                 savesNum -= 1;
-                shotsNum -= 1;
+                if (savesNum == 0) shotsNum = goalsNum;
+                else if (savesNum <= 0) savesNum = 0;
+                else if (shotsNum <= 0) shotsNum = 0;
+                else shotsNum -= 1;
                 // Since setText() cannot only pass through an integer,
                 // it must include an empty string in order to change num in TextView
                 savesTextField.setText("" + savesNum);
@@ -85,7 +96,10 @@ public class MainActivity extends AppCompatActivity {
                 TextView savePercentageTextField = (TextView) findViewById(R.id.savePercentageTextField);
                 TextView goalsAgainstAverageTextField = (TextView) findViewById(R.id.goalsAgainstAverageTextField);
                 goalsNum -= 1;
-                shotsNum -= 1;
+                if (goalsNum == 0) shotsNum = savesNum;
+                else if (goalsNum <= 0) goalsNum = 0;
+                else if (shotsNum <= 0) shotsNum = 0;
+                else shotsNum -= 1;
                 // Since setText() cannot only pass through an integer,
                 // it must include an empty string in order to change num in TextView
                 goalsTextField.setText("" + goalsNum);

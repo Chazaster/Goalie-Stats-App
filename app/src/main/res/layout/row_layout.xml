@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chase.statsapp.UsersActivity">
+
+    <!--Horizontal linear layout within vertical linear layout to have Name and Number
+        next to each other while having Team underneath on next line -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="45dp"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        tools:context="com.chase.statsapp.UsersActivity">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_user_name"
+            android:text="Name Here"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="left"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/text_user_name"
+            android:layout_marginRight="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_user_number"
+            android:text="Number Here"
+            android:textSize="17dp"
+            android:textColor="#000000"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="left"
+            />
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_user_team"
+        android:text="Team Here"
+        android:textSize="17dp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="left"
+        />
+</LinearLayout>

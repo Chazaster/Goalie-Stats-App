@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.chase.statsapp.MainActivity">
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveButton"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal"
+        android:id="@+id/goalButton"
+        android:layout_alignTop="@+id/saveButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/saveMinusButton"
+        android:layout_below="@+id/saveButton"
+        android:layout_alignLeft="@+id/saveButton"
+        android:layout_alignStart="@+id/saveButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/goalMinusButton"
+        android:layout_alignTop="@+id/saveMinusButton"
+        android:layout_alignLeft="@+id/goalButton"
+        android:layout_alignStart="@+id/goalButton"
+        android:onClick="saveMinusStats" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/savesTextField"
+        android:text="1"
+        android:textAlignment="center"
+        android:singleLine="false"
+        android:layout_alignTop="@+id/totalShotsTextField"
+        android:layout_alignLeft="@+id/saveButton"
+        android:layout_alignStart="@+id/saveButton"
+        android:layout_alignRight="@+id/saveButton"
+        android:layout_alignEnd="@+id/saveButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/goalsTextField"
+        android:text="0"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/savesTextField"
+        android:layout_alignRight="@+id/goalButton"
+        android:layout_alignEnd="@+id/goalButton"
+        android:layout_alignLeft="@+id/goalButton"
+        android:layout_alignStart="@+id/goalButton" />
+
+    <EditText
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/totalShotsTextField"
+        android:text="1"
+        android:textAlignment="center"
+        android:layout_below="@+id/totalShotsTextView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/savePercentageTextField"
+        android:text="1.0"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/goalsAgainstAverageTextField"
+        android:layout_alignRight="@+id/saveMinusButton"
+        android:layout_alignEnd="@+id/saveMinusButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Saves"
+        android:id="@+id/savesTextView"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/totalShotsTextView"
+        android:layout_alignLeft="@+id/savesTextField"
+        android:layout_alignStart="@+id/savesTextField"
+        android:layout_alignRight="@+id/savesTextField"
+        android:layout_alignEnd="@+id/savesTextField" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Save %"
+        android:id="@+id/savePercentageTextView"
+        android:textAlignment="center"
+        android:layout_above="@+id/savePercentageTextField"
+        android:layout_alignLeft="@+id/savePercentageTextField"
+        android:layout_alignStart="@+id/savePercentageTextField"
+        android:layout_alignRight="@+id/savePercentageTextField"
+        android:layout_alignEnd="@+id/savePercentageTextField" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Goals"
+        android:id="@+id/goalsTextView"
+        android:textAlignment="center"
+        android:layout_above="@+id/goalsTextField"
+        android:layout_alignLeft="@+id/goalsTextField"
+        android:layout_alignStart="@+id/goalsTextField"
+        android:layout_alignRight="@+id/goalsTextField"
+        android:layout_alignEnd="@+id/goalsTextField" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Total Shots"
+        android:id="@+id/totalShotsTextView"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:layout_alignLeft="@+id/totalShotsTextField"
+        android:layout_alignStart="@+id/totalShotsTextField"
+        android:layout_alignRight="@+id/totalShotsTextField"
+        android:layout_alignEnd="@+id/totalShotsTextField" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Stats"
+        android:id="@+id/saveStatsButton"
+        android:layout_below="@+id/goalMinusButton"
+        android:layout_alignLeft="@+id/totalShotsTextField"
+        android:layout_alignStart="@+id/totalShotsTextField"
+        android:onClick="saveStats" />
+
+    <EditText
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/goalsAgainstAverageTextField"
+        android:text="0.0"
+        android:textAlignment="center"
+        android:layout_below="@+id/saveStatsButton"
+        android:layout_alignLeft="@+id/goalMinusButton"
+        android:layout_alignStart="@+id/goalMinusButton"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="GAA"
+        android:id="@+id/GAATextView"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/savePercentageTextView"
+        android:layout_alignLeft="@+id/goalsAgainstAverageTextField"
+        android:layout_alignStart="@+id/goalsAgainstAverageTextField"
+        android:layout_alignRight="@+id/goalsAgainstAverageTextField"
+        android:layout_alignEnd="@+id/goalsAgainstAverageTextField" />
+</RelativeLayout>
