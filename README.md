@@ -3,4 +3,5 @@ A goalie stats tracker app specifically made for hockey goalies that makes it ea
 and utilizes MySQLite for the backend database
 
 Note: 3/20/17
+- Currently working is the stats tracker main activity, the add new user activity, and the user list activity
 - This app is not completed. Currently working on saving actual stats and little design flaws. I will provide a download link once completed.
