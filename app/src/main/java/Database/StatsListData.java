@@ -2,7 +2,6 @@
 package Database;
 
 import android.content.Context;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -37,16 +36,13 @@ public class StatsListData extends ArrayAdapter {
         LayoutHandler layoutHandler;
         if (row == null) {
             LayoutInflater layoutInflater = (LayoutInflater)this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            row = layoutInflater.inflate(R.layout.row_layout, parent, false);
+            row = layoutInflater.inflate(R.layout.activity_userstats, parent, false);
             layoutHandler = new LayoutHandler();
-            // Need to create text views in userStats activity before we can move on
-            /*
-            layoutHandler.SAVES = (TextView)row.findViewById(R.id.);
-            layoutHandler.SHOTS_AGAINST = (TextView)row.findViewById(R.id.);
-            layoutHandler.GOALS_AGAINST = (TextView)row.findViewById(R.id.);
-            layoutHandler.SAVE_PERCENTAGE = (TextView)row.findViewById(R.id.);
-            layoutHandler.GOALS_AGAINST_AVG = (TextView)row.findViewById(R.id.);
-            */
+            layoutHandler.SAVES = (TextView)row.findViewById(R.id.user_total_saves);
+            layoutHandler.SHOTS_AGAINST = (TextView)row.findViewById(R.id.user_total_shots_against);
+            layoutHandler.GOALS_AGAINST = (TextView)row.findViewById(R.id.user_total_goals_against);
+            layoutHandler.SAVE_PERCENTAGE = (TextView)row.findViewById(R.id.user_save_percentage);
+            layoutHandler.GOALS_AGAINST_AVG = (TextView)row.findViewById(R.id.user_goals_against_average);
             row.setTag(layoutHandler);
         }
         else layoutHandler = (LayoutHandler)row.getTag();

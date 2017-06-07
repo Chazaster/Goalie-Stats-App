@@ -102,14 +102,37 @@
         android:layout_alignLeft="@+id/editTeamText"
         android:layout_alignStart="@+id/editTeamText" />
 
+    <Space
+        android:id="@+id/space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNumberText"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
     <Button
-        android:text="Add User"
+        android:text="Cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:id="@+id/addUserButton"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/cancel"
         android:layout_below="@+id/editNumberText"
-        android:layout_centerHorizontal="true"
-        android:onClick="addUser"/>
+        android:onClick="cancel"
+        android:layout_toRightOf="@id/space"/>
+
+    <Button
+        android:text="Add User"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/addUserButton"
+        android:background="#F92270"
+        android:onClick="addUser"
+        android:layout_below="@+id/editNumberText"
+        android:layout_toLeftOf="@id/space"/>
 
 </RelativeLayout>

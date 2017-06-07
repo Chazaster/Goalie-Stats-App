@@ -194,6 +194,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save Stats"
+        android:textColor="#FFFFFF"
+        android:background="#F92270"
         android:id="@+id/saveStatsButton"
         android:onClick="saveStats"
         android:layout_below="@+id/goalMinusButton"

@@ -8,7 +8,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-
 public class Users extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "USER_INFO_DB";
     private static final int DATABASE_VERSION = 1;

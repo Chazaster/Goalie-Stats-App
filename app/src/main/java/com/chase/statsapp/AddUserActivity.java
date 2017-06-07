@@ -19,6 +19,7 @@ public class AddUserActivity extends FragmentActivity {
     Users users;
     SQLiteDatabase sqLiteDatabase;
     Button addUserButton;
+    Button cancelButton;
     Intent intent;
 
     @Override
@@ -37,17 +38,26 @@ public class AddUserActivity extends FragmentActivity {
         users = new Users(context);
         sqLiteDatabase = users.getWritableDatabase();
         users.addInformation(name, number, team, sqLiteDatabase);
-        Toast.makeText(getBaseContext(), "Data saved", Toast.LENGTH_LONG).show();
+        Toast.makeText(getBaseContext(), "Data Saved Successfully", Toast.LENGTH_LONG).show();
 
         /* SAVE BUTTON */
         addUserButton = (Button) findViewById(R.id.addUserButton);
         addUserButton.setOnClickListener(new View.OnClickListener() {
             public void onClick (View g) {
-                intent = (new Intent(AddUserActivity.this, UsersActivity.class));
-                startActivity(intent);
+                finish();
             }
         });
         users.close();
+    }
+
+    public void cancel (View view) {
+        /* CANCEL BUTTON */
+        cancelButton = (Button) findViewById(R.id.cancel);
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick (View g) {
+                finish();
+            }
+        });
     }
 }
 

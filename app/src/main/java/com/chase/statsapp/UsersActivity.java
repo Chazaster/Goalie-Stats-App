@@ -8,8 +8,9 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.content.Intent;
+import android.widget.AdapterView;
 import android.widget.ListView;
-
+import android.widget.AdapterView.OnItemClickListener;
 import Database.UserListData;
 import Database.UserDataProvider;
 import Database.Users;
@@ -49,8 +50,17 @@ public class UsersActivity extends FragmentActivity {
             } while (cursor.moveToNext());
         }
 
-        // Add code for saving stats data while clicking user in userListData
+        // Listening to single list item on click
+        listView.setOnItemClickListener(new OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // Now launch new activity on selected item
+                Intent i = new Intent(getApplicationContext(), UserStatsActivity.class);
+                // Send data to new activity
+                startActivity(i);
+            }
+        });
 
+        // Floating Action Button
         fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setImageResource(R.drawable.ic_menu_add);
         fab.setOnClickListener(new View.OnClickListener() {

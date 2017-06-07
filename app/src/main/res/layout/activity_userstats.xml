@@ -1,9 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.chase.statsapp.UserStatsActivity">
 
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        tools:context="com.chase.statsapp.UsersActivity">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_name"
+            android:text="Name Here"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_toRightOf="@id/imageView" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_number"
+            android:text="Number Here"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_toRightOf="@id/imageView" />
+
+        </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        tools:context="com.chase.statsapp.UsersActivity">
+
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_team"
+            android:text="Team Here"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_toRightOf="@id/imageView" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_total_shots_against"
+        android:text="Total Shots Against Here"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_toRightOf="@id/imageView" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_total_saves"
+        android:text="Total Saves Here"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_toRightOf="@id/imageView" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_total_goals_against"
+        android:text="Total Goals Against Here"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_toRightOf="@id/imageView" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_save_percentage"
+        android:text="Save Percentage Here"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_toRightOf="@id/imageView" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_goals_against_average"
+        android:text="Goals Against Average Here"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_toRightOf="@id/imageView" />
 
 </LinearLayout>

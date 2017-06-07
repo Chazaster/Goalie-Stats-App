@@ -31,6 +31,7 @@ public class MainActivity extends FragmentActivity {
                 String button_text;
                 button_text = ((Button) g).getText().toString();
                 if (button_text.equals("Save Stats")) {
+                    // Keep track of stats on this activity and save them to specified user on next activity
                     intent = (new Intent(MainActivity.this, UsersActivity.class));
                     startActivity(intent);
                 }
