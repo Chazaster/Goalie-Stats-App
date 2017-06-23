@@ -17,31 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2710ca0-32cb-4b42-993b-601562770f9c" name="Default" comment="Delete User Working">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/Database/Stats.java" afterPath="$PROJECT_DIR$/app/src/main/java/Database/Stats.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/Database/StatsData.java" afterPath="$PROJECT_DIR$/app/src/main/java/Database/StatsData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/Database/StatsDataProvider.java" afterPath="$PROJECT_DIR$/app/src/main/java/Database/StatsDataProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/Database/StatsListData.java" afterPath="$PROJECT_DIR$/app/src/main/java/Database/StatsListData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/Database/UserDataProvider.java" afterPath="$PROJECT_DIR$/app/src/main/java/Database/UserDataProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/Database/UserListData.java" afterPath="$PROJECT_DIR$/app/src/main/java/Database/UserListData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/Database/Users.java" afterPath="$PROJECT_DIR$/app/src/main/java/Database/Users.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/Database/UsersData.java" afterPath="$PROJECT_DIR$/app/src/main/java/Database/UsersData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/AddUserActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/AddUserActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/UserStatsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/UserStatsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/UsersActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/UsersActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_adduser.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_adduser.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_userstats.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_userstats.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="Goalie-Stats-App.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,18 +63,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserStatsActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/UserStatsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Stats.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/Database/Stats.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -165,11 +129,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddUserActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AddUserActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/AddUserActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+            <state relative-caret-position="334">
+              <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1541#1662#0" expanded="true" />
@@ -177,6 +141,16 @@
                 <element signature="e#1859#1980#0" expanded="true" />
                 <element signature="e#1979#1980#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="124" selection-start-line="6" selection-start-column="124" selection-end-line="6" selection-end-column="124" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1864,13 +1838,11 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/row_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_users.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_adduser.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_userstats.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/UserStatsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/UsersActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/AddUserActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/Database/Stats.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/Database/StatsData.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/Database/StatsDataProvider.java" />
@@ -1879,6 +1851,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/Database/UserListData.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/Database/Users.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/Database/UsersData.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/AddUserActivity.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -2903,14 +2877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/widget/AdapterView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -3086,8 +3052,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chase/statsapp/AddUserActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+        <state relative-caret-position="334">
+          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1541#1662#0" expanded="true" />
@@ -3095,6 +3061,14 @@
             <element signature="e#1859#1980#0" expanded="true" />
             <element signature="e#1979#1980#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="124" selection-start-line="6" selection-start-column="124" selection-end-line="6" selection-end-column="124" />
+          <folding />
         </state>
       </provider>
     </entry>
