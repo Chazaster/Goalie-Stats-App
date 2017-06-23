@@ -5,7 +5,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.chase.statsapp.UserStatsActivity">
+    android:paddingBottom="16dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="16dp"
+    tools:context="com.chase.statsapp.UserStatsActivity"
+    android:weightSum="1">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="70dp"
@@ -24,7 +29,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_width="150dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:id="@+id/user_name"
             android:text="Name Here"
@@ -35,18 +40,18 @@
 
         <TextView
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginRight="20dp"
-            android:layout_width="150dp"
+            android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:id="@+id/user_number"
-            android:text="Number Here"
+            android:text="Number"
             android:textColor="#000000"
             android:textSize="17dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_toRightOf="@id/imageView" />
 
-        </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_height="70dp"
@@ -70,73 +75,195 @@
             android:textColor="#000000"
             android:textSize="17dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_toRightOf="@id/imageView" />
+            />
 
     </LinearLayout>
 
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/user_total_shots_against"
-        android:text="Total Shots Against Here"
-        android:textColor="#000000"
-        android:textSize="17dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_toRightOf="@id/imageView" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:context="com.chase.statsapp.UsersActivity"
+        android:orientation="horizontal">
 
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/user_total_saves"
-        android:text="Total Saves Here"
-        android:textColor="#000000"
-        android:textSize="17dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_toRightOf="@id/imageView" />
+        <TextView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/shots_text"
+            android:text="Shots"
+            android:textColor="#7C7C7C"
+            android:textSize="17dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
 
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/user_total_goals_against"
-        android:text="Total Goals Against Here"
-        android:textColor="#000000"
-        android:textSize="17dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_toRightOf="@id/imageView" />
+        <TextView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/saves_text"
+            android:text="Saves"
+            android:textColor="#7C7C7C"
+            android:textSize="17dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
 
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/user_save_percentage"
-        android:text="Save Percentage Here"
-        android:textColor="#000000"
-        android:textSize="17dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_toRightOf="@id/imageView" />
+        <TextView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/goals_text"
+            android:text="Goals"
+            android:textColor="#7C7C7C"
+            android:textSize="17dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
 
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/user_goals_against_average"
-        android:text="Goals Against Average Here"
-        android:textColor="#000000"
-        android:textSize="17dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_toRightOf="@id/imageView" />
+        <TextView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/save_percentage_text"
+            android:text="SVP"
+            android:textColor="#7C7C7C"
+            android:textSize="17dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <TextView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/goals_against_average_text"
+            android:text="GAA"
+            android:textColor="#7C7C7C"
+            android:textSize="17dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        tools:context="com.chase.statsapp.UsersActivity"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_total_shots_against"
+            android:text="Shots"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <TextView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_total_saves"
+            android:text="Saves"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <TextView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_total_goals_against"
+            android:text="Goals"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <TextView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_save_percentage"
+            android:text="SVP"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <TextView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_goals_against_average"
+            android:text="GAA"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        tools:context="com.chase.statsapp.UsersActivity"
+        android:orientation="horizontal"
+        android:layout_weight="0.06">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:background="#F92270"
+            android:textColor="#FFFFFF"
+            android:text="Save Stats"
+            android:layout_toLeftOf="@id/space"
+            android:id="@+id/save_stats_button"/>
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="45dp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:text="Delete User"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:onClick="deleteUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BABABA"
+            android:layout_toRightOf="@id/space"
+            android:id="@+id/delete_button" />
+
+    </RelativeLayout>
 
 </LinearLayout>

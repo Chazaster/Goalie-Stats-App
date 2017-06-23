@@ -1,8 +1,7 @@
 /* Created by Chase Watson */
-package com.chase.statsapp;
 
+package com.chase.statsapp;
 import android.content.Context;
-import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -20,7 +19,6 @@ public class AddUserActivity extends FragmentActivity {
     SQLiteDatabase sqLiteDatabase;
     Button addUserButton;
     Button cancelButton;
-    Intent intent;
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {

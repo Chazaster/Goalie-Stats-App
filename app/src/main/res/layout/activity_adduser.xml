@@ -119,6 +119,7 @@
         android:layout_marginLeft="30dp"
         android:id="@+id/cancel"
         android:layout_below="@+id/editNumberText"
+        android:background="#BABABA"
         android:onClick="cancel"
         android:layout_toRightOf="@id/space"/>
 

@@ -1,18 +1,22 @@
 /* Created by Chase Watson */
-package com.chase.statsapp;
 
+package com.chase.statsapp;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.content.Intent;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class MainActivity extends FragmentActivity {
     Intent intent;
     int savesNum = 1;
     int goalsNum = 0;
     int shotsNum = 1;
+    Double savePercentageAmount;
+    Double gaaAmount;
     Button savesMinusClickHere;
     Button savesPlusClickHere;
     Button goalsMinusClickHere;
@@ -33,6 +37,11 @@ public class MainActivity extends FragmentActivity {
                 if (button_text.equals("Save Stats")) {
                     // Keep track of stats on this activity and save them to specified user on next activity
                     intent = (new Intent(MainActivity.this, UsersActivity.class));
+                    intent.putExtra("saves", savesNum);
+                    intent.putExtra("shots", shotsNum);
+                    intent.putExtra("goals", goalsNum);
+                    intent.putExtra("save percentage", savePercentageAmount);
+                    intent.putExtra("goals against average", gaaAmount);
                     startActivity(intent);
                 }
             }
@@ -58,7 +67,8 @@ public class MainActivity extends FragmentActivity {
                 // Math for save percentage that updates each time plus/minus buttons are pressed
                 Double savesAmount = Double.parseDouble(savesTextField.getText().toString());
                 Double shotsAmount = Double.parseDouble(totalShotsTextField.getText().toString());
-                Double savePercentageAmount = savesAmount / shotsAmount;
+                savePercentageAmount = savesAmount / shotsAmount;
+                round(savePercentageAmount, 2);
 
                 savePercentageTextField.setText("" + savePercentageAmount);
             }
@@ -81,7 +91,8 @@ public class MainActivity extends FragmentActivity {
                 // Math for save percentage that updates each time plus/minus buttons are pressed
                 Double savesAmount = Double.parseDouble(savesTextField.getText().toString());
                 Double shotsAmount = Double.parseDouble(totalShotsTextField.getText().toString());
-                Double savePercentageAmount = savesAmount / shotsAmount;
+                savePercentageAmount = savesAmount / shotsAmount;
+                round(savePercentageAmount, 2);
 
                 savePercentageTextField.setText("" + savePercentageAmount);
             }
@@ -109,11 +120,13 @@ public class MainActivity extends FragmentActivity {
                 // Math for save percentage that updates each time plus/minus buttons are pressed
                 Double savesAmount = Double.parseDouble(savesTextField.getText().toString());
                 Double shotsAmount = Double.parseDouble(totalShotsTextField.getText().toString());
-                Double savePercentageAmount = savesAmount / shotsAmount;
+                savePercentageAmount = savesAmount / shotsAmount;
+                round(savePercentageAmount, 2);
 
                 // Math for goals against average that updates each time plus/minus buttons are pressed
                 Double goalsAmount = Double.parseDouble(goalsTextField.getText().toString());
-                Double gaaAmount = goalsAmount + .00;
+                gaaAmount = goalsAmount + .00;
+                round(gaaAmount, 2);
 
                 savePercentageTextField.setText("" + savePercentageAmount);
                 goalsAgainstAverageTextField.setText("" + gaaAmount);
@@ -139,15 +152,24 @@ public class MainActivity extends FragmentActivity {
                 // Math for save percentage that updates each time plus/minus buttons are pressed
                 Double savesAmount = Double.parseDouble(savesTextField.getText().toString());
                 Double shotsAmount = Double.parseDouble(totalShotsTextField.getText().toString());
-                Double savePercentageAmount = savesAmount / shotsAmount;
+                savePercentageAmount = savesAmount / shotsAmount;
+                round(savePercentageAmount, 2);
 
                 // Math for goals against average that updates each time plus/minus buttons are pressed
                 Double goalsAmount = Double.parseDouble(goalsTextField.getText().toString());
-                Double gaaAmount = goalsAmount + .00;
+                gaaAmount = goalsAmount + .00;
+                round(gaaAmount, 2);
 
                 savePercentageTextField.setText("" + savePercentageAmount);
                 goalsAgainstAverageTextField.setText("" + gaaAmount);
             }
         });
+    }
+
+    public static double round (double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+        BigDecimal bd = new BigDecimal(value);
+        bd = bd.setScale(places, RoundingMode.HALF_UP);
+        return bd.doubleValue();
     }
 }

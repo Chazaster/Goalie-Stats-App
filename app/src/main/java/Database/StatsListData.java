@@ -1,6 +1,6 @@
 /* Created by Chase Watson */
-package Database;
 
+package Database;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;

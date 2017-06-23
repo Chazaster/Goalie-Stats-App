@@ -1,4 +1,5 @@
 /* Created by Chase Watson */
+
 package Database;
 
 public class StatsDataProvider {
