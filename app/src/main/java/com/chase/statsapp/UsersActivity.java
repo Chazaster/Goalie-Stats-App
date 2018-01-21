@@ -56,7 +56,6 @@ public class UsersActivity extends FragmentActivity {
                 nameData.add(new Item(name));
                 numberData.add(new Item(number));
                 teamData.add(new Item(team));
-
                 // Passes each row of data into the userListData adapter class
                 UserDataProvider dataProvider = new UserDataProvider(name, number, team);
                 userListData.add(dataProvider);
@@ -85,8 +84,14 @@ public class UsersActivity extends FragmentActivity {
                 i.putExtra("name", nameItem);
                 i.putExtra("number", numberItem);
                 i.putExtra("team", teamItem);
-                i.putExtras(getIntent().getExtras());
-                startActivity(i);
+                if (getIntent().getExtras() != null) {
+                    i.putExtras(getIntent().getExtras());
+                    startActivity(i);
+                }
+                else {
+                    startActivity(i);
+                }
+
             }
         });
 

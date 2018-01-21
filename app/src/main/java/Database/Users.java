@@ -45,19 +45,17 @@ public class Users extends SQLiteOpenHelper {
         return cursor;
     }
 
+    // For editing an already existing user, later functionality
+    public void saveUser (String user_name, SQLiteDatabase db, ContentValues values) {
+        String selection = UsersData.NewUserInfo.USER_NAME + " LIKE ?";
+        String[] selection_args = {user_name};
+        db.update(UsersData.NewUserInfo.TABLE_NAME, values, selection, selection_args);
+    }
+
     public void deleteUser (String user_name, SQLiteDatabase db) {
         String selection = UsersData.NewUserInfo.USER_NAME + " LIKE ?";
         String[] selection_args = {user_name};
         db.delete(UsersData.NewUserInfo.TABLE_NAME, selection, selection_args);
-
-        /*
-        DELETE_QUERY = UNFINISHED_DELETE_QUERY + var;
-        Log.e(DELETE_QUERY, "is what will be executed");
-        Log.e(var, "is the user that will be deleted");
-        db.execSQL(DELETE_QUERY);
-        Log.e("DATABASE OPERATIONS", "USER DELETED");
-        db.execSQL("DROP TABLE IF EXISTS user_info");
-        */
     }
 
     @Override

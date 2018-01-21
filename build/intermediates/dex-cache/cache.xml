@@ -3,93 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/Chase/Documents/Goalie-Stats-App/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.3"
-        sha1="201bd791dd01abed18132f59e07a7f204ad0bf53">
-        <dex dex="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_26842d760c5b52a85c7c23660c86e3f8775731fc/classes.dex" />
+        revision="25.0.0"
+        sha1="95d8f7738e7c71bf1487b43eeb136b31f18396d3">
+        <dex dex="/Users/Chase/Documents/Goalie-Stats-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_6fca2daf78939e6cfa61ec984d92af3b9b8bb1ab/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/Chase/Documents/Goalie-Stats-App/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
-        revision="23.0.3"
-        sha1="38156bd5d62e5a9f872b1ade3eb8281fd4ade8bf">
-        <dex dex="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0f91da240db1e7c071f9f0bc448c8ea7887e678e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_bb41855e53d4b72a7d1d9c753aaa824f5bc1e3e9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
-        <dex dex="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.1.0_5e89562714db6e9b7b34bfbd2c8fd010e6c2ba72/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_a948aa0562b427333c31bf6768858a24c3ba89ef/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_6656f48bff8affadea496aa37ab2b785bbad7398/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_4b86230ad292bc6662ad50cfea0f918bf75560f8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Chase/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_45d505136a93b74fd554f62644bf850d603f238a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
-        <dex dex="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.1.0_00f404f2961e413dec116d3e7d88852b70fd9543/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/Users/Chase/Documents/CS/StatsApp/Goalie-Stats-App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_92e31221956863365a1a690de09dd5d9cc0cf4ea/classes.dex" />
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/Chase/Documents/Goalie-Stats-App/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c22fd1d9779b70eb68d07365716d71e1c1035908/classes.dex" />
     </item>
 
 </items>

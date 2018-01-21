@@ -225,6 +225,79 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        tools:context="com.chase.statsapp.UsersActivity"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/adding_shots_against"
+            android:text="+Shots"
+            android:textColor="#028A13"
+            android:textSize="9dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <TextView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/adding_saves"
+            android:text="+Saves"
+            android:textColor="#028A13"
+            android:textSize="9dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <TextView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/adding_goals_against"
+            android:text="+Goals"
+            android:textColor="#028A13"
+            android:textSize="9dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <TextView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/adding_save_percentage"
+            android:text="+SVP"
+            android:textColor="#028A13"
+            android:textSize="9dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+        <TextView
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/adding_goals_against_average"
+            android:text="+GAA"
+            android:textColor="#028A13"
+            android:textSize="9dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+
+    </LinearLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -242,7 +315,8 @@
             android:textColor="#FFFFFF"
             android:text="Save Stats"
             android:layout_toLeftOf="@id/space"
-            android:id="@+id/save_stats_button"/>
+            android:id="@+id/save_stats_button"
+            android:onClick="saveUser"/>
 
         <Space
             android:id="@+id/space"
