@@ -7,3 +7,10 @@ Note: 6/23/17
 - UserStats activity partially working: data from main activity successfully transfers to specified user across 2 activities
 - This app is not completed. Currently working on saving actual stats and little design flaws. I will provide a download link once completed.
 - User can now delete users in database within UserStats activity
+
+Note: 1/21/18 - Goalie Stats App 1.0 Alpha
+- The app is now in its alpha stage and can be used to save stats
+- This is a minimum build and is still missing some functionality such as:
+    - Saving stats on a game-by-game basis
+    - Design flaws
+    - Allow user to upload images
