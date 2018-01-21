@@ -10,6 +10,7 @@ Note: 6/23/17
 
 Note: 1/21/18 - Goalie Stats App 1.0 Alpha
 - The app is now in its alpha stage and can be used to save stats
+- There is a new navigation splash page to allow the user a more freer navigation of the app instead of the previous linear navigation
 - This is a minimum build and is still missing some functionality such as:
     - Saving stats on a game-by-game basis
     - Design flaws
