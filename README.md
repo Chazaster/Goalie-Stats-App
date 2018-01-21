@@ -15,3 +15,4 @@ Note: 1/21/18 - Goalie Stats App 1.0 Alpha
     - Design flaws
     - Allow user to upload images
     - Implement Recycler View on Users list
+    - Finish fragmentation for quicker navigation through each activity
