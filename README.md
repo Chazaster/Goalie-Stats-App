@@ -14,3 +14,4 @@ Note: 1/21/18 - Goalie Stats App 1.0 Alpha
     - Saving stats on a game-by-game basis
     - Design flaws
     - Allow user to upload images
+    - Implement Recycler View on Users list
