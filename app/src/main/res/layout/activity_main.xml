@@ -4,27 +4,64 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#232335"
     tools:context="com.chase.statsapp.MainActivity">
 
-    <Button
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculate Stats"
-        android:id="@+id/toStatsButton"
-        android:onClick="toStats"/>
+        android:layout_margin="10dp"
+        android:src="@drawable/tendy_tracker_text_logo"/>
 
-    <Button
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View Users"
-        android:id="@+id/toUsersButton"
-        android:onClick="toUsersList" />
+        android:layout_gravity="center">
 
-    <Button
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Users"
+            android:fontFamily="Avenir"
+            android:id="@+id/toUsersButton"
+            android:background="@drawable/button_border"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:onClick="toUsersList" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create New User"
-        android:id="@+id/toNewUserButton"
-        android:onClick="toAddUser" />
+        android:paddingTop="10dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate Stats"
+            android:fontFamily="Avenir"
+            android:id="@+id/toStatsButton"
+            android:background="@drawable/button_border"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:onClick="toStats"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New User"
+            android:fontFamily="Avenir"
+            android:id="@+id/toNewUserButton"
+            android:background="@drawable/button_border"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            android:onClick="toAddUser" />
+
+    </LinearLayout>
 
 </LinearLayout>
